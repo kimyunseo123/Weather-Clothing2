@@ -1,0 +1,1630 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400|Pacifico";
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+.image.fit img {
+	width: 100%;
+	height: auto;
+}
+	ol, ul {
+		list-style: none;
+	}
+
+	blockquote, q {
+		quotes: none;
+	}
+
+	blockquote:before, blockquote:after, q:before, q:after {
+		content: '';
+		content: none;
+	}
+
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+	body {
+		-webkit-text-size-adjust: none;
+	}
+
+/* --------------------------------------------------------------------------- */
+/* Basic */
+
+	@-ms-viewport {
+		width: device-width;
+	}
+
+	body {
+		-ms-overflow-style: scrollbar;
+	}
+
+	@media screen and (max-width: 480px) {
+
+		html, body {
+			min-width: 320px;
+		}
+
+	}
+
+	body {
+		background: #fff;
+	}
+
+		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
+			-moz-animation: none !important;
+			-webkit-animation: none !important;
+			-ms-animation: none !important;
+			animation: none !important;
+			-moz-transition: none !important;
+			-webkit-transition: none !important;
+			-ms-transition: none !important;
+			transition: none !important;
+		}
+
+	.inner {
+		margin: 0 auto;
+		max-width: 65em;
+	}
+
+		@media screen and (max-width: 1280px) {
+
+			.inner {
+				max-width: 90%;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.inner {
+				max-width: 70%;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.inner {
+				max-width: 85%;
+			}
+
+		}
+
+/* --------------------------------------------------------------------------- */
+/* Type */
+
+	body, input, select, textarea {
+		color: #767d85;
+		font-family: "Open Sans", Arial, Helvetica, sans-serif;
+		font-size: 13pt;
+		font-weight: 300;
+		line-height: 1.65;
+	}
+
+		@media screen and (max-width: 1680px) {
+
+			body, input, select, textarea {
+				font-size: 11pt;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			body, input, select, textarea {
+				font-size: 11pt;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			body, input, select, textarea {
+				font-size: 12pt;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			body, input, select, textarea {
+				font-size: 12pt;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			body, input, select, textarea {
+				font-size: 12pt;
+			}
+
+		}
+
+	a {
+		color: #25a2c3;
+		text-decoration: underline;
+	}
+
+		a:hover {
+			text-decoration: none;
+		}
+
+	strong, b {
+		color: #727a82;
+		font-weight: 700;
+	}
+
+	em, i {
+		font-style: italic;
+	}
+
+	p {
+		margin: 0 0 2em 0;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: #727a82;
+		font-weight: 700;
+		font-family: "Montserrat", sans-serif;
+		line-height: 1.5;
+		margin: 0 0 1em 0;
+	}
+
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+	h1 {
+		font-size: 2em;
+		line-height: 1.3;
+	}
+
+	h2 {
+		font-size: 1.75em;
+	}
+
+	h3 {
+		font-size: 1.25em;
+	}
+
+	h4 {
+		font-size: 1em;
+	}
+
+	h5 {
+		font-size: 0.9em;
+	}
+
+	h6 {
+		font-size: 0.7em;
+	}
+
+	sub {
+		font-size: 0.8em;
+		position: relative;
+		top: 0.5em;
+	}
+
+	sup {
+		font-size: 0.8em;
+		position: relative;
+		top: -0.5em;
+	}
+
+	blockquote {
+		font-style: italic;
+		margin: 0 0 2em 0;
+	}
+
+	cite {
+		display: block;
+	}
+
+		cite.author {
+			font-weight: 400;
+		}
+
+		cite.company {
+			font-size: .8em;
+		}
+
+	figure {
+		margin: 0 0 2em 0;
+	}
+
+	code {
+		background: rgba(144, 144, 144, 0.075);
+		border-radius: 4px;
+		border: solid 1px #dee1e3;
+		font-family: "Courier New", monospace;
+		font-size: 0.9em;
+		margin: 0 0.25em;
+		padding: 0.25em 0.65em;
+	}
+
+	pre {
+		-webkit-overflow-scrolling: touch;
+		font-family: "Courier New", monospace;
+		font-size: 0.9em;
+		margin: 0 0 2em 0;
+	}
+
+		pre code {
+			display: block;
+			line-height: 1.75;
+			padding: 1em 1.5em;
+			overflow-x: auto;
+		}
+
+	hr {
+		border: 0;
+		border-bottom: solid 1px #dee1e3;
+		margin: 2em 0;
+	}
+
+		hr.major {
+			margin: 3em 0;
+		}
+
+	.align-left {
+		text-align: left;
+	}
+
+	.align-center {
+		text-align: center;
+	}
+
+	.align-right {
+		text-align: right;
+	}
+
+/* --------------------------------------------------------------------------- */
+/* Icon */
+
+	.icon {
+		text-decoration: none;
+		border-bottom: none;
+		position: relative;
+	}
+
+		.icon:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			text-transform: none !important;
+		}
+
+		.icon > .label {
+			display: none;
+		}
+
+/* --------------------------------------------------------------------------- */
+/* button*/
+.button {
+    background-color: #2196f3;
+    border-radius: 4px;
+    border: 0;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    height: 3.5em;
+    line-height: 3.5em;
+    padding: 0 3.5em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #1976d2;
+}
+
+.button.alt {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px #dee1e3;
+    color: #727a82 !important;
+}
+
+.button.alt:hover {
+    background-color: rgba(144, 144, 144, 0.075);
+}
+
+.button.alt:active {
+    background-color: rgba(144, 144, 144, 0.2);
+}
+
+#logoutButton {
+	background-color: #2196f3; /* 헤더 색상과 동일하게 설정 */
+	color: white; /* 텍스트 색상 */
+	border: none;
+	padding: 0 1em;
+	cursor: pointer;
+	font-size: 14px;
+	border-radius: 4px;
+	height: 2em;
+	line-height: 2em;
+}
+
+#userGreeting {
+	margin-right: 15px; /* 이름과 로그아웃 버튼 사이에 여백 추가 */
+}
+
+#logoutButton:hover {
+	background-color: #1976d2; /* 호버 시 약간 밝은 색상 */
+}
+
+#deleteButton {
+    position: absolute;
+    right: 1em; /* 오른쪽으로 정렬 */
+    bottom: 1em; /* 하단으로 정렬 */
+    margin: 10px; /* 여백 추가 */
+}
+
+.gender-buttons {
+	display: flex;
+	gap: 10px;
+}
+.gender-button {
+	border: 1px solid #ccc;
+	width: 35px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	text-align: center;
+	font-size: 15px;
+	border-radius: 4px;
+	background-color: #fff; /* Default background color for buttons */
+}
+.gender-button.active {
+	background-color: #2196f3;
+	color: white;
+}
+
+/* --------------------------------------------------------------------------- */
+/* Wrapper */
+
+	.wrapper {
+		padding: 6em 0 4em 0;
+	}
+
+		.wrapper h1, .wrapper h2, .wrapper h3, .wrapper h4, .wrapper h5 {
+			color: #f56046;
+		}
+
+		.wrapper.style1 {
+			background: #2196f3;
+			color: #2196f3;
+		}
+
+			.wrapper.style1 h1, .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5 {
+				color: #fff;
+			}
+
+			.wrapper.style1 cite.author {
+				color: #fff;
+			}
+
+		@media screen and (max-width: 980px) {
+
+			.wrapper {
+				padding: 3em 0 1em 0;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.wrapper {
+				padding: 2em 0 0.1em 0;
+			}
+
+		}
+
+/* --------------------------------------------------------------------------- */
+/* Header */
+
+	body {
+		padding-top: 6em;
+	}
+
+	#header {
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		background: #fff;
+		cursor: default;
+		height: 6em;
+		left: 0;
+		line-height: 6em;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 10001;
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.075);
+		text-align: center;
+	}
+
+		#header .logo {
+			color: #1e88c3;
+			font-family: "Pacifico", cursive;
+			font-size: 2.5em;
+			letter-spacing: 2px;
+			margin-top: -5px;
+			text-decoration: none;
+			display: inline-block;
+		}
+
+		#header nav {
+			position: absolute;
+			top: 0;
+			height: inherit;
+			line-height: inherit;
+		}
+
+			#header nav.left {
+				left: 2em;
+			}
+
+			#header nav.right {
+				right: 2em;
+			}
+
+			#header nav .button {
+				padding: 0 2em;
+				height: 3.25em;
+				line-height: 3.25em;
+			}
+
+			#header nav a {
+				text-decoration: none;
+				display: inline-block;
+			}
+
+				#header nav a[href="#menu"] {
+					text-decoration: none;
+					-webkit-tap-highlight-color: transparent;
+					font-size: 2em;
+					color: #dee1e3;
+					z-index: 10005;
+				}
+
+					#header nav a[href="#menu"]:before {
+						content: "";
+						-moz-osx-font-smoothing: grayscale;
+						-webkit-font-smoothing: antialiased;
+						font-family: FontAwesome;
+						font-style: normal;
+						font-weight: normal;
+						text-transform: none !important;
+					}
+
+					#header nav a[href="#menu"] span {
+						display: none;
+					}
+
+					#header nav a[href="#menu"]:before {
+						margin: 0 0.5em 0 0;
+					}
+
+	@media screen and (max-width: 980px) {
+
+		body {
+			padding-top: 44px;
+		}
+
+		#header {
+			height: 44px;
+			line-height: 44px;
+		}
+
+			#header .logo {
+				font-size: 1.25em;
+				text-align: center;
+			}
+
+			#header nav a[href="#menu"] {
+				font-size: 1.5em;
+			}
+
+			#header nav.left {
+				left: 1em;
+			}
+
+			#header nav.right {
+				display: none;
+			}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		#header {
+			min-width: 320px;
+		}
+
+	}
+
+/* --------------------------------------------------------------------------- */
+/* Menu */
+
+	#menu {
+		-moz-transform: translateX(-20em);
+		-webkit-transform: translateX(-20em);
+		-ms-transform: translateX(-20em);
+		transform: translateX(-20em);
+		-moz-transition: -moz-transform 0.5s ease, visibility 0.5s;
+		-webkit-transition: -webkit-transform 0.5s ease, visibility 0.5s;
+		-ms-transition: -ms-transform 0.5s ease, visibility 0.5s;
+		transition: transform 0.5s ease, visibility 0.5s;
+		-webkit-overflow-scrolling: touch;
+		background: #1e88c3;
+		color: #ffffff;
+		height: 100%;
+		max-width: 80%;
+		overflow-y: auto;
+		padding: 3em 2em;
+		position: fixed;
+		left: 0;
+		top: 0;
+		visibility: hidden;
+		width: 20em;
+		z-index: 10002;
+	}
+
+		#menu > ul {
+			margin: 0 0 1em 0;
+		}
+
+			#menu > ul.links {
+				list-style: none;
+				padding: 0;
+			}
+
+				#menu > ul.links > li {
+					padding: 0;
+				}
+
+					#menu > ul.links > li > a:not(.button) {
+						border: 0;
+						border-top: solid 1px rgba(255, 255, 255, 0.25);
+						color: inherit;
+						display: block;
+						line-height: 3.5em;
+						text-decoration: none;
+					}
+
+					#menu > ul.links > li > .button {
+						display: block;
+						margin: 0.5em 0 0 0;
+					}
+
+					#menu > ul.links > li:first-child > a:not(.button) {
+						border-top: 0 !important;
+					}
+
+			#menu > ul.actions {
+				display: none;
+			}
+
+	/* Close button styling */
+	#menu .close {
+    	text-decoration: none;
+    	transition: color 0.2s ease-in-out;
+    	border: 0;
+    	color: #a7d9e7;
+    	cursor: pointer;
+    	display: block;
+    	height: 3.25em;
+    	line-height: 3.25em;
+    	padding-right: 1.25em;
+    	position: absolute;
+    	right: 0;
+    	text-align: right;
+    	top: 0;
+    	width: 7em;
+    	font-family: 'FontAwesome', sans-serif; /* Ensure FontAwesome is used */
+    	font-size: 1.25em;
+	}
+
+	/* X icon for close button */
+	#menu .close::before {
+    	content: "\f00d"; /* FontAwesome Unicode for 'times' icon */
+    	font-family: 'FontAwesome'; /* Ensure FontAwesome is applied */
+	}
+
+	/* Change icon color on hover */
+	#menu .close:hover {
+    	color: #ffffff;
+	}
+
+	@media screen and (max-width: 736px) {
+    	#menu .close {
+        	height: 4em;
+        	line-height: 4em;
+    	}
+	}
+
+		#menu.visible {
+			-moz-transform: translateX(0);
+			-webkit-transform: translateX(0);
+			-ms-transform: translateX(0);
+			transform: translateX(0);
+			visibility: visible;
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#menu ul.actions {
+				display: block;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#menu {
+				padding: 2.5em 1.75em;
+			}
+
+		}
+
+/* --------------------------------------------------------------------------- */
+/* Banner */
+
+	#banner {
+		padding: 14em 0 0 0;
+		background-image: url(../images/cloud.jpg);
+		background-size: cover;
+		background-position: center top;
+		background-repeat: no-repeat;
+		text-align: center;
+	}
+
+		#banner .content {
+			-moz-transition: opacity 1s ease-in-out, -moz-transform 0.75s ease-in-out;
+			-webkit-transition: opacity 1s ease-in-out, -webkit-transform 0.75s ease-in-out;
+			-ms-transition: opacity 1s ease-in-out, -ms-transform 0.75s ease-in-out;
+			transition: opacity 1s ease-in-out, transform 0.75s ease-in-out;
+			opacity: 1;
+		}
+
+		#banner h1 {
+			font-size: 3em;
+			color: #25a2c3;
+			line-height: 1em;
+			margin: 0 0 0.5em 0;
+			padding: 0;
+		}
+
+		#banner p {
+			font-size: 1.25em;
+			margin-bottom: 1.75em;
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			#banner {
+				padding: 12em 0 10em 0;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#banner {
+				padding: 8em 6em 6em 6em;
+			}
+
+				#banner br {
+					display: none;
+				}
+
+				#banner h1 {
+					font-size: 2.25em;
+				}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#banner {
+				padding: 6em 4em 4em 4em;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#banner {
+				padding: 4em 2em 2em 2em;
+			}
+
+				#banner h1 {
+					font-size: 2em;
+				}
+
+				#banner p {
+					font-size: 1em;
+				}
+
+				#banner .button {
+					font-size: .9em;
+				}
+
+		}
+
+		body.is-loading #banner .content {
+			opacity: 0;
+			-moz-transform: translateY(1em);
+			-webkit-transform: translateY(1em);
+			-ms-transform: translateY(1em);
+			transform: translateY(1em);
+		}
+
+/* --------------------------------------------------------------------------- */
+/* Footer */
+
+#footer {
+    padding: 4em 0 3em 0;
+    background: #1e88c3;
+    text-align: center;
+    color: #c8e7f0;
+}
+
+#footer h2 {
+    color: #fff;
+}
+
+#footer .icon {
+    color: #f6755e;
+}
+
+#footer a {
+    color: #c8e7f0;
+    text-decoration: none;
+}
+
+#footer ul.actions {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#footer ul.actions li {
+    margin: 0 1em; 
+    display: flex;
+    align-items: center;
+}
+
+#footer ul.actions .icon {
+    margin-right: 8px; 
+}
+
+#footer .copyright {
+    display: inline-block;
+    color: #a7d9e7;
+    font-size: 0.75em;
+    margin: 0 0 2em 0;
+    padding: 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 2em 10em;
+}
+
+.copyright {
+    background: #25a2c3;
+    display: inline-block;
+    color: white;
+    font-size: 0.75em;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 2em 0 2em 0;
+    width: 100%;
+}
+
+.copyright a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 980px) {
+    #footer {
+        padding: 3em 0 1em 0;
+    }
+
+    #footer ul.actions {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items horizontally */
+    }
+
+    #footer ul.actions li {
+        margin: 0.5em 0; /* Space between stacked items */
+    }
+}
+
+@media screen and (max-width: 736px) {
+    #footer .copyright {
+        padding: 2em 5em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #footer {
+        padding: 2em 0 0.1em 0;
+    }
+
+    #footer ul.actions li {
+        font-size: 0.9em;
+    }
+
+    #footer ul.actions .icon:before {
+        margin-left: -1em;
+    }
+
+    #footer .copyright {
+        padding: 2em 0;
+    }
+}
+
+
+/* ================================================================= */
+/* ==============================Q & A============================== */
+.header-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px;
+}
+
+.button.write {
+	background-color: #4CAF50; /* Green */
+	color: white;
+	padding: 0.75em 1em; /* Adjusted padding */
+	text-decoration: none;
+	border-radius: 4px;
+	font-size: 1em;
+	font-family: 'YourFontName', sans-serif; /* Apply font from css/style.css */
+	margin-left: 10px;
+	display: inline-block; /* Ensure it aligns correctly */
+	text-align: center;
+	height: auto; /* Adjust height based on content */
+	line-height: 1.5; /* Center text vertically */
+}
+
+.button.write:hover {
+	background-color: #45a049; /* Darker green */
+}
+
+.write-list {
+	padding: 1em;
+	background-color: #fff;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	overflow-y: auto;
+	box-sizing: border-box;
+	margin-top: 2em; /* Increased margin to separate from the button */
+}
+
+.write-header {
+	display: flex;
+	font-weight: bold;
+	border-bottom: 2px solid #ccc;
+	padding-bottom: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.write-item {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.75em 0; /* Increased padding */
+	border-bottom: 1px solid #eee;
+}
+
+.write-header span, .write-item span {
+	display: flex;
+	align-items: center; /* Center content vertically */
+	justify-content: center; /* Center content horizontally */
+	padding: 0 10px; /* Adjust padding */
+	text-align: center; /* Center text horizontally */
+}
+
+.write-header span:first-child, .write-item span:first-child {
+	flex: 3; /* Title column should be the widest */
+	text-align: center;
+}
+
+.write-header span:nth-child(2), .write-item span:nth-child(2) {
+	flex: 2; /* Author column */
+	text-align: center;
+}
+
+.write-header span:nth-child(3), .write-item span:nth-child(3) {
+	flex: 1; /* Answer status column */
+	text-align: center;
+}
+
+.write-header span:last-child, .write-item span:last-child {
+	flex: 2; /* Date column */
+	text-align: center; 
+}
+
+.container {
+	position: relative; /* To position the button relative to this container */
+}
+
+.button.write {
+	position: absolute;
+	top: 40px;
+	right: 20px;
+}
+
+.write-list {
+	padding: 1em;
+	background-color: #fff;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	overflow-y: auto;
+	box-sizing: border-box;
+	margin-top: 6em; /* Increased margin to separate from the button */
+	position: relative;
+}
+
+.write-item {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.75em 0; /* Increased padding */
+	border-bottom: 1px solid #eee;
+	cursor: pointer;
+}
+
+/* Hidden by default */
+.write-detail {
+	display: none;
+	padding: 1em;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	background-color: #f9f9f9;
+	margin-top: 1em;
+	position: relative; /* Relative positioning for the close button */
+}
+
+.write-detail .close {
+	position: absolute; 
+	top: 20px; 
+	right: 30px; 
+	color: #a7d9e7;
+	font-size: 1.25em;
+	cursor: pointer;
+	z-index: 1;
+	font-weight: bold;
+}
+
+.write-detail .content, .write-detail .answer {
+	margin-bottom: 1.5em;
+	padding: 0.75em;
+	border-radius: 4px; 
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.write-detail .content {
+	border: 2px solid #ddd; 
+	background-color: #fff; 
+	margin-top: 3em; 
+}
+
+.write-detail .answer {
+	border: 2px solid #ddd; 
+	background-color: #f1f1f1;
+}
+
+.write-detail h2 {
+	font-size: 1em; 
+	margin-bottom: 0.5em;
+}
+
+.write-list {
+	margin-top: 20px;
+}
+.write-header {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	font-weight: bold;
+	border-bottom: 2px solid #333;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.write-header span {
+	padding: 0 10px;
+	text-align: center;
+}
+.write-list ul {
+	list-style-type: none;
+	padding: 0;
+}
+.write-list li {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+	cursor: pointer; /* 클릭 가능하게 만들기 */
+}
+.write-list li span {
+	padding: 0 10px;
+	text-align: center;
+}
+.write-list li:nth-child(even) {
+	background-color: #f9f9f9;
+}
+.qa-item {
+	display: none; /* 기본적으로 숨김 */
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	max-width: 600px;
+	background-color: white;
+	border: 2px solid #ddd;
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	z-index: 1000;
+}
+.qa-item h3 {
+	margin-top: 0;
+}
+.qa-item .close-btn {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 20px;
+	cursor: pointer;
+}
+.qa-item .content {
+	margin-top: 20px;
+}
+.overlay {
+	display: none; /* 기본적으로 숨김 */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 999;
+}
+
+/* ================================================================= */
+/* ==============================login============================== */
+        /* Additional Styles for Centering the Form */
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40vh; /* Adjust this value for more or less vertical centering */
+        }
+
+        .login-form {
+            width: 100%;
+            max-width: 400px;
+            font-family: 'YourFontName', sans-serif; /* Apply font from css/style.css */
+        }
+
+        .login-form .row {
+            margin-bottom: 1.5em;
+            display: flex;
+            align-items: center;
+        }
+
+        .login-form label {
+            flex: 1;
+            text-align: left;
+            margin-right: 5px;
+            white-space: nowrap; /* Prevents label from wrapping */
+            font-weight: bold; /* Make text bold */
+            font-family: inherit; /* Inherit font from .login-form */
+        }
+
+        .login-form input {
+            flex: 4;
+            width: 100%;
+            font-family: inherit; /* Inherit font from .login-form */
+        }
+
+        .align-center {
+            text-align: center;
+        }
+
+        .signup-link {
+            margin-top: 2em; 
+        }
+
+        .login-form .button-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+/* ================================================================= */
+/* ==============================SignUp============================= */
+        /* Styles for Centering the Form */
+        .signup-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh; /* Adjust as needed */
+        }
+
+        .signup-form {
+            width: 100%;
+            max-width: 500px;
+            font-family: 'YourFontName', sans-serif; /* Apply font from css/style.css */
+        }
+
+        .signup-form .row {
+            margin-bottom: 1.5em;
+            display: flex;
+            align-items: center;
+        }
+
+        .signup-form label {
+            flex: 1;
+            text-align: left;
+            margin-right: 5px;
+            white-space: nowrap; /* Prevents label from wrapping */
+            font-weight: bold; /* Make text bold */
+            font-family: inherit; /* Inherit font from .signup-form */
+        }
+
+        .signup-form input {
+            flex: 4;
+            width: 100%;
+            font-family: inherit; /* Inherit font from .signup-form */
+        }
+
+        .align-center {
+            text-align: center;
+        }
+
+        .signup-button {
+            display: inline-block;
+            padding: 0.75em 1.5em;
+            font-size: 1.2em; /* Adjust font size as needed */
+            color: white;
+            background-color: #1e88e5; /* Darker blue */
+            border: none;
+            border-radius: 4px;
+            text-decoration: none; /* Remove underline from link */
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-family: 'YourFontName', sans-serif; /* Apply font from css/style.css */
+        }
+
+        .signup-button:hover {
+            background-color: #1565c0; /* Darker blue on hover */
+        }
+
+        .signup-link {
+            margin-top: 2em;
+        }
+
+        .signup-form .button-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+/* ================================================================= */
+/* ==============================write============================== */
+.form-container {
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+}
+
+.form-container label {
+	display: block;
+	margin-bottom: 0.5em;
+	font-weight: bold;
+}
+
+.form-container input[type="text"], 
+.form-container textarea {
+	width: 100%;
+	padding: 0.75em;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-bottom: 1em;
+}
+
+.form-container textarea {
+	height: 200px;
+	resize: vertical;
+}
+
+.form-container button {
+	background-color: #4CAF50; /* Green */
+	color: white;
+	padding: 0.75em 1.5em;
+	border: none;
+	border-radius: 4px;
+	font-size: 1em;
+	cursor: pointer;
+	display: block;
+	margin: 0 auto;
+}
+
+.form-container button:hover {
+	background-color: #45a049; /* Darker green */
+}
+
+.container {
+	position: relative;
+	padding: 2em;
+}
+
+/* ================================================================= */
+/* =============================clothing============================= */
+        /* CSS styles */
+        .main-content {
+            display: flex;
+            gap: 1%;
+            padding: 0 2%;
+            margin-top: 5em;
+        }
+
+        .left-section {
+            width: 70%;
+            margin-right: 2%;
+            padding: 0 1em;
+        }
+
+        .left-section h3 {
+            margin-bottom: 1em;
+            font-weight: bold;
+            text-align: center;
+            color: #1e88c3;
+        }
+
+        .right-section {
+            width: 28%;
+        }
+
+        .inputs {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+
+        .inputs label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .inputs input,
+        .inputs select {
+            margin: 0 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .recommendations {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2em;
+        }
+
+        .recommendation {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 1em;
+            cursor: pointer;
+        }
+
+        .recommendation img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .custom-outfit {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .custom-outfit h3 {
+            margin-bottom: 1em;
+            font-weight: bold;
+            text-align: center;
+            color: #1e88c3;
+        }
+
+        .outfit {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .outfit-part {
+            width: 100%;
+            margin-bottom: 1em;
+        }
+
+        .outfit-box {
+            height: 100px;
+            width: 100px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            background-color: #1e88c3;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            margin: 5px 0;
+        }
+
+        .button {
+                background-color: #2196f3;
+                border-radius: 4px;
+                border: 0;
+                color: #ffffff;
+                cursor: pointer;
+                display: inline-block;
+                font-family: "Montserrat", sans-serif;
+                height: 2.5em;
+                line-height: 2.5em;
+                padding: 0 1em;
+                text-align: center;
+                text-decoration: none;
+                white-space: nowrap;
+                text-transform: uppercase;
+            }
+
+            .button:hover {
+                background-color: #1976d2;
+            }
+
+/* ================================================================= */
+/* =============================forecast============================= */
+            /* Custom CSS for button and centering */
+            .button {
+                background-color: #2196f3;
+                border-radius: 4px;
+                border: 0;
+                color: #ffffff;
+                cursor: pointer;
+                display: inline-block;
+                font-family: "Montserrat", sans-serif;
+                height: 2.5em;
+                line-height: 2.5em;
+                padding: 0 1em;
+                text-align: center;
+                text-decoration: none;
+                white-space: nowrap;
+                text-transform: uppercase;
+            }
+
+            .button:hover {
+                background-color: #1976d2;
+            }
+
+			
+            /* Centering the content */
+            .centered-content {
+                text-align: center;
+            }
+
+            /* Custom CSS for weather information */
+            #weatherInfo {
+                font-family: "Montserrat", sans-serif;
+                margin-top: 20px;
+            }
+/* ================================================================= */
+/* ================================================================= */
+			#answerInput {
+				display: none;
+				width: 100%;
+				height: 100px;
+				margin-top: 10px;
+				padding: 10px;
+				box-sizing: border-box;
+			}
+			#submitAnswerButton {
+				display: none;
+				margin-top: 10px;
+			}
+			.button-container {
+				margin-top: 10px;
+			}
+			
+			 #currentWeather, #dailyForecasts {
+            width: 100%;
+            max-width: 1200px;
+            margin-bottom: 20px;
+            margin-top: 24px;
+        }
+        #currentWeather {
+            text-align: center;
+            display: none; /* Initially hidden */
+            margin-top: 100px; /* Add space between search and current weather */
+        }
+        #currentWeather img {
+            width: 100px;
+            height: 100px;
+        }
+        #dailyForecasts {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            display: none; /* Initially hidden */
+        }
+        .forecastDay {
+            width: 18%;
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 6px; /* Added padding */
+            border: 1px solid #ddd; /* Added border for better separation */
+            border-radius: 8px; /* Rounded corners */
+            background-color: #f9f9f9; /* Light background for better visibility */
+        }
+        .forecastDay img {
+            width: 100px;
+            height: 100px;
+        }
+        .forecastDay table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .forecastDay th, .forecastDay td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+            white-space: nowrap; /* Prevent wrapping */
+        }
+        .forecastDay th {
+            background-color: #ddd; /* Updated header color with 50% opacity */
+            font-weight: bold;
+            border: 1px solid #fff;
+        }
+        .forecastDay td.time {
+            width: 30%; /* Reduced width for time */
+        }
+        .forecastDay td.temp {
+            width: 70%; /* Increased width for temperature */
+        }
+        .forecastDay p.date {
+            font-weight: bold; /* Make date bold */
+        }
+        .forecastDay p.wind,
+        .forecastDay p.precipitation,
+        #currentWeather p {
+            text-align: center; /* Align text to the left */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+        .forecastDay p {
+            margin-bottom: 5px; /* Adjust spacing between paragraphs */
+        }
+        .forecastDay .temperature {
+            white-space: nowrap; /* Prevents wrapping of temperature values */
+        }
+        #currentWeather .weather-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px; /* Space between items */
+            margin-top: 20px;
+        }
+
+        #currentWeather .weather-info img {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+        }
+
+        #currentWeather .weather-info span {
+            font-size: 16px;
+            line-height: 30px; /* Align text with icons */
+            font-weight: bold;
+        }
+
+        .FiveDay {
+            display: none; /* Initially hidden */
+            margin-top: 100px; /* Add space above the daily forecasts */
+        }
+
+
+/* ================================================================= */
+/* ================================================================= */
+.post-details { text-align: right; font-size: 0.8em; color: #666; margin-bottom: 10px; }
+        .button-container { text-align: right; margin-top: 20px; }
+        .button-container .button { margin-left: 5px; }
+        .comment-form,
+        .comment-section {
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 20px;
+        }
+        .comment-form form {
+            display: flex;
+            flex-direction: column;
+        }
+        .comment-form textarea {
+            width: 100%;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        .comment-form button {
+            align-self: flex-end; /* Right-aligns the submit button */
+        }
+        .comment {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .comment-content p:last-child {
+            text-align: right;
+            font-size: 0.8em; /* Smaller font size for the comment date */
+            margin: 0;
+        }
+        .comment-section {
+	    width: 100%;
+	    box-sizing: border-box;
+	    margin-top: 20px;
+	    padding-top: 20px; /* Added padding to create space */
+		}
+		.delete-link {
+		    font-size: 0.8em; /* Same size as the comment date */
+		    color: #007bff; /* Bootstrap primary color or any color you prefer */
+		    text-decoration: underline;
+		}
